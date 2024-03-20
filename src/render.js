@@ -18,7 +18,7 @@ async function getVideoSources(){
         inputSources.map(source => {
             return {
                 label: source.name,
-                click: () => selectSource()
+                click: () => selectSource(source)
             };
         })
     );
